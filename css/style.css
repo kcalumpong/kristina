@@ -1,52 +1,56 @@
-h2, p {
+h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
     font-weight: lighter;
     /* color: rgb(63, 62, 62); */
-    color: rgb(139, 123, 73);
+    color: black;
+}
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white
+}
+
+#title h2 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;   
 }
 .nav-link {
-    color: rgb(139, 123, 73);
+    color: black;
     font-size: 16px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
 #container {
-    background: black;
+    background:white;
 }
-
+#about-me-container {
+    background: white;
+}
 a:hover {
     color: white;
 }
-
 #name-and-title {
     text-align: center;
     margin: 200px auto
 }
-
 .fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope {
-    /* color: rgb(63, 62, 62); */
-    color: rgb(94, 82, 48);
+    color: black;
 }
-
 .fa-stack {
     margin-top: 10px;
 }
-
 #about-me {
     text-align: center;
     margin: 50px auto;
 }
-
 #about-me p {
     font-size: 16px;
 }
-
 #skills-icons li {
    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: lighter;
     text-align: center;
-
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -79,6 +83,17 @@ body {
 	height: 100vh;
 	letter-spacing: 1px;
 }
+.about-me {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
 
 .title h1 {
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
@@ -92,3 +107,16 @@ body {
     margin: 10px 0;
     font-weight: bold;
 }
+
+.about-me h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: .75;
+    margin: 10px 0;
+    font-weight: bold;
+} 
