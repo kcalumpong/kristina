@@ -3,7 +3,7 @@ h1 {
     font-size: 200px;
 }
 
-h2 {
+h2, p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     font-weight: lighter;
@@ -19,7 +19,7 @@ a:hover {
     color: white;
 }
 
-#name-and-title, #about-me {
+#name-and-title {
     text-align: center;
     margin: 200px auto
 }
@@ -38,20 +38,82 @@ hr {
 }
 
 #about-me {
-    position: relative;
-    margin: 0 auto;
-    background-color: #ffffff;
-    width: 90%;
-    border-style: solid;
-    border-color: #dddddd;
-    border-width: 1px;
-    margin-top: 100px;
-    color: #777777;
-    padding: 10px 15px;
-    height: 300px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.5em;
+    text-align: center;
+    margin: 50px auto;
 }
 
+#about-me p {
+    font-size: 16px;
+}
+
+#skills-icons li {
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #eceaea, #b6b5b6, #ffffff, #d6fff5);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+h3 {
+	color: #eee;
+	font-weight: 100;
+}
+
+h5 {
+	color:#eee;
+	font-weight:300;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #ddd;
+}
 
