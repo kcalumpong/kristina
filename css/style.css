@@ -1,0 +1,57 @@
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 200px;
+}
+
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(63, 62, 62);
+}
+.nav-link {
+    color: black;
+    font-size: 16px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+a:hover {
+    color: white;
+}
+
+#name-and-title, #about-me {
+    text-align: center;
+    margin: 200px auto
+}
+
+hr {
+    background-color: rgb(247, 247, 225);
+
+}
+
+.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope {
+    color: rgb(63, 62, 62);
+}
+
+.fa-stack {
+    margin-top: 10px;
+}
+
+#about-me {
+    position: relative;
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 90%;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    margin-top: 100px;
+    color: #777777;
+    padding: 10px 15px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+
