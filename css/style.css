@@ -9,7 +9,7 @@ p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    color: white
+    color: black;
 }
 
 #title h2 {
@@ -22,7 +22,7 @@ p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #container {
-    background:white;
+    background:rgb(253, 253, 253);
 }
 #about-me-container {
     background: white;
@@ -34,7 +34,7 @@ a:hover {
     text-align: center;
     margin: 200px auto
 }
-.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope {
+.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope, .fa-file-pdf-o  {
     color: black;
 }
 .fa-stack {
@@ -47,7 +47,7 @@ a:hover {
 #about-me p {
     font-size: 16px;
 }
-#skills-icons li {
+.card {
    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: lighter;
     text-align: center;
@@ -55,7 +55,7 @@ a:hover {
     animation-name: slidein;
   }
   
-  @keyframes slidein {
+  /* @keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%; 
@@ -65,7 +65,7 @@ a:hover {
       margin-left: 0%;
       width: 100%;
     }
-  }
+  } */
 
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
@@ -80,13 +80,24 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 90vh;
 	letter-spacing: 1px;
+}
+.portfolio {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 90vh;
+    letter-spacing: 1px;
+    margin-top: 30px;
 }
 .about-me {
 	font-family: "Montserrat";
 	text-align: center;
-	color: #FFF;
+	color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -109,6 +120,18 @@ body {
 }
 
 .about-me h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: .75;
+    margin: 10px 0;
+    font-weight: bold;
+} 
+.portfolio h1 {
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
