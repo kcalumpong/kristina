@@ -24,8 +24,10 @@ p {
 #container {
     background:rgb(253, 253, 253);
 }
-#about-me-container {
+#about-me-icons {
     background: white;
+    text-align: center;
+    margin-top: 50px auto;
 }
 a:hover {
     color: white;
@@ -42,31 +44,33 @@ a:hover {
 }
 #about-me {
     text-align: center;
-    margin: 50px auto;
+    height: 25vh;
 }
 #about-me p {
     font-size: 16px;
 }
-.card {
-   font-family: 'Yanone Kaffeesatz', sans-serif;
+#skills li {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+.bio {
+    justify-content: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: lighter;
     text-align: center;
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  
-  /* @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%; 
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  } */
+    margin: auto;
+}
+hr {
+    width: 50%;
+}
 
+#small-hr {
+    width: 10%;
+}
+
+  
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
 	background-color: #111;
@@ -119,7 +123,7 @@ body {
     font-weight: bold;
 }
 
-.about-me h1 {
+#about-me h1 {
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
@@ -143,8 +147,8 @@ body {
     margin: 10px 0;
     font-weight: bold;
 } 
-.portfolio img {
-    width: 400px;
+.giphy img {
+    width: 200px;
     height: auto;
-    margin-top: 30px;
+    margin-top: 50px;
 }
