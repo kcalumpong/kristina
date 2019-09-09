@@ -23,6 +23,7 @@ p {
 }
 #container {
     background:rgb(253, 253, 253);
+    height: 300px;
 }
 #about-me-icons {
     background: white;
@@ -94,7 +95,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 90vh;
+    height: 90vh;
     letter-spacing: 1px;
     margin-top: 30px;
 }
@@ -174,3 +175,18 @@ body {
     color: black;
 }
 
+.gbn {
+    margin-bottom: 50px;
+}
+
+/* .footer {
+    position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #787878;
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	margin-right: 0px;
+} */
