@@ -95,7 +95,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    height: 90vh;
+    /* height: 90vh; */
     letter-spacing: 1px;
     margin-top: 30px;
 }
@@ -190,3 +190,8 @@ body {
 	padding-right: 0px;
 	margin-right: 0px;
 } */
+
+
+@media (max-width: 767px) {
+
+}

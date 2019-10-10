@@ -76,8 +76,37 @@
                 </div>
                 
                 <br><br>
-          
-                <div class="card" style="width: 20rem;">
+
+                <style>
+                    .abc {
+                        display: grid;
+                        grid-template-columns: 30% 30% 30%;
+                        
+                        grid-gap: 10px;
+                        grid-template-rows: auto;
+                    }
+                    .a {
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                    }
+                    .b {
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        grid-row-start: 1;
+                        grid-row-end: 2;                        
+                    }
+                    .c {
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                        grid-row-start: 1;
+                        grid-row-end: 2;                        
+                    }                                          
+                </style>
+          <div class="abc" >
+            
+                <div class="card a" style="width: 20rem;">
                     <img src="./assets/images/gif.png" class="card-img-top" alt="gif">
                     <div class="card-body">
                         <h5 class="card-title">Giftastic</h5>
@@ -90,7 +119,7 @@
     
                 <br><br>
 
-            <div class="card" style="width: 20rem;">
+            <div class="card b" style="width: 20rem;">
                 <img src="./assets/images/train.png" class="card-img-top" alt="Train-Schedule">
                 <div class="card-body">
                     <h5 class="card-title">Caledonia Train</h5>
@@ -103,7 +132,7 @@
 
             <br><br>
 
-            <div class="card gbn" style="width: 20rem;">
+            <div class="card gbn c" style="width: 20rem;">
                 <img src="./assets/images/gbn.png" class="card-img-top" alt="Global by Night">
                 <div class="card-body">
                     <h5 class="card-title">Global by Night</h5>
@@ -117,7 +146,7 @@
     </div>
     </div>
 
-
+</div>
     <script src="./javascript/portfolio.js"></script>
 
 
