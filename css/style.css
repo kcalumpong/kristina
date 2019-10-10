@@ -1,10 +1,51 @@
-h2 {
+/* index.html */
+
+.container {
+    display: flex;
+}
+
+.title h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 4rem;
+	line-height: .75;
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    letter-spacing: 1px;
+}
+
+.title h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    font-size: 20px;
     font-weight: lighter;
-    /* color: rgb(63, 62, 62); */
+    color: rgb(32, 31, 31);
+}
+
+.title h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
     color: black;
 }
+
+
 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
@@ -12,26 +53,31 @@ p {
     color: black;
 }
 
-#title h2 {
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
-    animated-cursor 600ms steps(29,end) infinite;   
-}
-.nav-link {
-    color: black;
-    font-size: 16px;
+.my-work a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    bottom: 100;
+    background-color: rgb(236, 240, 184);
+    /* color: rgb(248, 170, 118); */
+    color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
 }
-#container {
-    background:rgb(253, 253, 253);
-    height: 300px;
+.my-work a:hover {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
 }
+
+/* portfolio.html */
+
+
 #about-me-icons {
     background: white;
     text-align: center;
     padding-bottom: 30px;
-}
-a:hover {
-    color: white;
 }
 #name-and-title {
     text-align: center;
@@ -73,21 +119,7 @@ hr {
 
   
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
-body {
-	background-color: #111;
-}
 
-.title {
-	font-family: "Montserrat";
-	text-align: center;
-	color: #FFF;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 90vh;
-	letter-spacing: 1px;
-}
 .portfolio {
 	font-family: "Montserrat";
 	text-align: center;
@@ -116,19 +148,6 @@ body {
     font-size: 14px;
     font-weight: lighter;
     color: black;
-}
-
-.title h1 {
-	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-	font-size: 3.5rem;
-	line-height: .75;
-    margin: 10px 0;
-    font-weight: bold;
 }
 
 #about-me h1 {
@@ -179,19 +198,8 @@ body {
     margin-bottom: 50px;
 }
 
-/* .footer {
-    position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	background-color: #787878;
-	padding-left: 0px;
-	margin-left: 0px;
-	padding-right: 0px;
-	margin-right: 0px;
+
+/* .title h2 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;   
 } */
-
-
-@media (max-width: 767px) {
-
-}
