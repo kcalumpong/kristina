@@ -6,44 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kristina Calumpong</title>
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Yanone+Kaffeesatz:300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Montserrat|Yanone+Kaffeesatz:300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/animista.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
-    <div id="container">
-        <nav>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./aboutme.html">ABOUT ME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
-                </li>
-            </ul>
-        </nav>
 
+    <div class="grid-container">
         <div class="portfolio">
+            <div class="p">
             <h1>PORTFOLIO</h1>
+            <div id="about-me-icons">
+            
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <a href="http://www.github.com/kcalumpong" target="_blank"><i class="fa fa-github fa-stack-1x"></i></a>
+                    </span>
+            
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <a href="https://www.linkedin.com/in/kristinacalumpong/" target="_blank"><i
+                                class="fa fa-linkedin fa-stack-1x"></i></a>
+                    </span>
+            
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <a href="mailto:kcalumpong@gmail.com" target="_blank"><i class="fa fa-envelope fa-stack-1x"></i></a>
+                    </span>
+            
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <a href="assets/kristina_resume.pdf" target="_blank"><i
+                                class="fa fa-file-pdf-o fa-stack-1x"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
 
-            <br><br>
 
-            <div class="card" style="width: 20rem;">
+        <div class="projects-left">
+
+            <div class="card" style="width: 30rem;">
+                <img src="./assets/register.png" class="card-img-top" alt="codeBook">
+                <div class="card-body">
+                    <h5 class="card-title">CODE BOOK</h5>
+                    <p class="card-text">A note taking app with a built in code editor to help developers stay organized with their notes and
+                            code.Built with a team of four.... explain more here... list technologies</p>
+                    <a href="https://github.com/kcalumpong/Project_2" class="btn btn-light">View the code on Github</a>
+                    <a href="https://code-book-app.herokuapp.com" class="btn btn-light">View on Heroku</a>
+                </div>
+            </div>
+            
+        <div class="card" style="width: 30rem;">
+                <img src="./assets/burger.png" class="card-img-top" alt="burger">
+                <div class="card-body">
+                    <h5 class="card-title">Eat Da Burger</h5>
+                    <p class="card-text">A virtual burger app....</p>
+                    <a href="https://github.com/kcalumpong/burger" class="btn btn-light">View the code on Github</a>
+                    <a href="https://kristinas-burger.herokuapp.com" class="btn btn-light">View on Heroku</a>
+                </div>
+            </div>
+    
+      
+       
+            <div class="card" style="width: 30rem;">
                 <img src="./assets/bamazonCustomer.gif" class="card-img-top" alt="bamazon">
                 <div class="card-body">
                     <h5 class="card-title">Bamazon</h5>
@@ -51,14 +90,12 @@
                         purchase through several items in different departments ranging from Home & Garden to Outdoor &
                         Sports. Managers have the ability to "View Products", "View Low Inventory", "Add to Inventory"
                         and "Add New Product". Built with Javascript, Node.js and MySQL.</p>
-                    <a href="https://kcalumpong.github.io/bamazon" class="btn btn-light">View the code for BAMAZON</a>
+                    <a href="https://kcalumpong.github.io/bamazon" class="btn btn-light">View the code on Github</a>
                 </div>
             </div>
-
-            <br><br>
-
+   
             
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 30rem;">
                     <img src="./assets/liriNode.gif" class="card-img-top" alt="cheftastic">
                     <div class="card-body">
                         <h5 class="card-title">Liri</h5>
@@ -71,68 +108,11 @@
                                 <li>Surprise you with one of the above.</li>
                             </ul>
                         </p>
-                        <a href="https://kcalumpong.github.io/liri-node-app" class="btn btn-light">View Liri</a>
+                        <a href="https://kcalumpong.github.io/liri-node-app" class="btn btn-light">View the code on Github</a>
                     </div>
                 </div>
-                
-                <br><br>
-
-                <!-- <style>
-                    .abc {
-                        display: grid;
-                        grid-template-columns: 30% 30% 30%;
-                        
-                        grid-gap: 10px;
-                        grid-template-rows: auto;
-                    }
-                    .a {
-                        grid-column-start: 1;
-                        grid-column-end: 2;
-                        grid-row-start: 1;
-                        grid-row-end: 2;
-                    }
-                    .b {
-                        grid-column-start: 2;
-                        grid-column-end: 3;
-                        grid-row-start: 1;
-                        grid-row-end: 2;                        
-                    }
-                    .c {
-                        grid-column-start: 3;
-                        grid-column-end: 4;
-                        grid-row-start: 1;
-                        grid-row-end: 2;                        
-                    }                                          
-                </style> -->
-          <div class="abc" >
-            
-                <div class="card a" style="width: 20rem;">
-                    <img src="./assets/images/gif.png" class="card-img-top" alt="gif">
-                    <div class="card-body">
-                        <h5 class="card-title">Giftastic</h5>
-                        <p class="card-text">A site that allows you see the top 10 GIFS based on your current mood. Select
-                            from a range of moods like "Happy", "Sad" and "Lady Gaga". Designed with HTML, CSS, Javascript,
-                            jQuery, and GIPHY API.</p>
-                        <a href="https://kcalumpong.github.io/GifTastic" class="btn btn-light">View Giftastic</a>
-                    </div>
-                </div>
-    
-                <br><br>
-
-            <div class="card b" style="width: 20rem;">
-                <img src="./assets/images/train.png" class="card-img-top" alt="Train-Schedule">
-                <div class="card-body">
-                    <h5 class="card-title">Caledonia Train</h5>
-                    <p class="card-text"> A train table created for train administrators. The train table shows each
-                        train's destination, next arrival time and how often it runs. Designed with HTML, CSS,
-                        Bootstrap, Javascript, JQuery, and Moment.js.</p>
-                    <a href="https://kcalumpong.github.io/Train-Schedule/" class="btn btn-light">View Caledonia Train</a>
-                </div>
-            </div>
-
-            <br><br>
-
-            <div class="card gbn c" style="width: 20rem;">
+           
+            <div class="card gbn" style="width: 30rem;">
                 <img src="./assets/images/gbn.png" class="card-img-top" alt="Global by Night">
                 <div class="card-body">
                     <h5 class="card-title">Global by Night</h5>
@@ -142,16 +122,17 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
     
-    </div>
-    </div>
 
-</div>
+          
+      
+    
+  
+
     <script src="./javascript/portfolio.js"></script>
-
-
-
-
 
 </body>
 

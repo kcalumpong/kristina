@@ -4,7 +4,8 @@
     display: flex;
 }
 
-.title h1 {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.title h1  {
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
@@ -45,7 +46,6 @@
     color: black;
 }
 
-
 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
@@ -58,7 +58,6 @@ p {
     position: relative;
     bottom: 100;
     background-color: rgb(236, 240, 184);
-    /* color: rgb(248, 170, 118); */
     color: black;
     border-radius: 20px;
     font-size: 14px;
@@ -73,133 +72,126 @@ p {
 
 /* portfolio.html */
 
-
-#about-me-icons {
-    background: white;
-    text-align: center;
-    padding-bottom: 30px;
-}
-#name-and-title {
-    text-align: center;
-    margin: 200px auto
-}
-.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope, .fa-file-pdf-o  {
-    color: black;
-}
-.fa-stack {
-    margin-top: 10px;
-}
-#about-me {
-    text-align: center;
-    height: 25vh;
-}
-#about-me p {
-    font-size: 16px;
-}
-#skills li {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 16px;
-    font-weight: lighter;
-
-}
-.bio {
+.grid-container {
+    display: flex;
+    height: 100vh;
+    align-content: center;
     justify-content: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    margin: auto;
 }
-hr {
-    width: 50%;
-}
-
-#small-hr {
-    width: 10%;
-}
-
-  
-  @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .portfolio {
-	font-family: "Montserrat";
-	text-align: center;
-	color: #FFF;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    /* height: 90vh; */
-    letter-spacing: 1px;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    width: 100%;
+    height: 100%; 
 }
+
+.p {
+
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.portfolio h1 {  
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 4rem;
+	line-height: .75;
+    margin: 20px 0;
+    font-weight: bold;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin-left: 30px;
+} 
+
 .about-me {
-	font-family: "Montserrat";
-	text-align: center;
-	color: black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100vh;
-    letter-spacing: 1px;
-    margin-top: 30px;
+    grid-column: 1; 
+    background-color: black; 
+    margin: 0px;
 }
 
-.liri {
+
+/* portfolio projects */
+
+.projects-left {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* grid-row: 2; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center; 
+    overflow: auto;
+    width: 90%;
+    height: 400vh;
+    margin-right: 25px;
+}
+
+.projects-left a {
+    /* background-color: rgb(240, 184, 221); */
+    color: black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    bottom: 100;
+    border-radius: 20px;
     font-size: 14px;
-    font-weight: lighter;
-    color: black;
+    padding: 10px;
+    padding-top: 10px; 
+
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    background-color: black;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
 }
 
-#about-me h1 {
-	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+.projects-left a:hover {
+    /* background-color: rgb(151, 68, 126); */
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.card h5 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    background-color: black;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+/* aboutme.html */
+
+.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope, .fa-file-pdf-o  {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-	font-size: 3rem;
-	line-height: .75;
-    margin: 10px 0;
-    font-weight: bold;
-    padding: 20px;
-} 
-.portfolio h1 {
-	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-	font-size: 3rem;
-	line-height: .75;
-    margin: 10px 0;
-    font-weight: bold;
-} 
-.giphy img {
-    width: 200px;
-    height: auto;
-    margin-top: 50px;
-}
-
-.btn-light {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.card-title {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-}
-
-.gbn {
-    margin-bottom: 50px;
 }
 
 
-/* .title h2 {
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
-    animated-cursor 600ms steps(29,end) infinite;   
-} */
+
+
