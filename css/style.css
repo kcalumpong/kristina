@@ -33,7 +33,6 @@
 
 .title h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-top: 25px;
     margin-bottom: 100px;
     font-size: 20px;
     font-weight: lighter;
@@ -59,10 +58,16 @@ p, li {
     position: relative;
     bottom: 100;
     background-color: rgb(236, 240, 184);
-    color: black;
+    border: 1px solid black;
     border-radius: 20px;
     font-size: 14px;
     padding: 10px;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
 }
 .my-work a:hover {
     color: white;
@@ -156,12 +161,14 @@ p, li {
 /* carousel */
 
 .card-body img {
-    width: 350px;
-    height: 300px;
+    width: 35rem;
+    height: auto;
 }
 .carousel {
     margin-bottom: 35px;
     width: 35rem;
+    align-content: center;
+    justify-content: center;
 }
 
 .carousel-controls a {
@@ -183,4 +190,31 @@ p, li {
     margin-bottom: 25px;
 }
 
+@media screen and (max-width: 600px) {
+    .card-body img {
+        width: 25rem;
+        height: auto;
+    }
+    .carousel {
+        margin-bottom: 30px;
+        width: 25rem;
+        align-content: center;
+        justify-content: center;
+    }
+  }
+
+@media screen and (max-width: 413px) {
+    .card-body img {
+        width: 24rem;
+        height: auto;
+        align-content: center;
+        justify-content: center;
+    }
+    .carousel {
+        margin-bottom: 30px;
+        width: 24rem;
+        align-content: center;
+        justify-content: center;
+    }
+  }
 
