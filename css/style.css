@@ -12,7 +12,8 @@
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-	font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: 11vw;
 	line-height: .75;
     margin: 10px 0;
     font-weight: bold;
@@ -46,7 +47,7 @@
     color: black;
 }
 
-p {
+p, li {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
     font-weight: lighter;
@@ -79,28 +80,13 @@ p {
     justify-content: center;
 }
 
-.portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; 
-    width: 100%;
-    height: 100%; 
-}
-
 .p {
-
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self: auto;
     align-content: center;
     text-align: center;
+    height: 100vh;
 }
 
-.portfolio h1 {  
+.p h1 {  
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
@@ -113,7 +99,6 @@ p {
     font-weight: bold;
     font-weight: bold;
     font-family: "Montserrat";
-    margin-left: 30px;
 } 
 
 .about-me {
@@ -126,12 +111,6 @@ p {
 /* portfolio projects */
 
 .projects-left {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    /* grid-row: 2; */
-    flex-direction: column;
-    justify-content: flex-start;
     align-content: center;
     text-align: center; 
     overflow: auto;
@@ -141,7 +120,6 @@ p {
 }
 
 .projects-left a {
-    /* background-color: rgb(240, 184, 221); */
     color: black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     position: relative;
@@ -150,7 +128,6 @@ p {
     font-size: 14px;
     padding: 10px;
     padding-top: 10px; 
-
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     background-size: cover;
     background-color: black;
@@ -161,13 +138,12 @@ p {
 }
 
 .projects-left a:hover {
-    /* background-color: rgb(151, 68, 126); */
     text-decoration: none;
     align-content: center;
     justify-content: center;
 }
 
-.card h5 {
+.card-body a {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     background-size: cover;
     background-color: black;
@@ -177,8 +153,19 @@ p {
 	text-transform: uppercase;
 }
 
-.card {
-    margin-bottom: 30px;
+/* carousel */
+
+.card-body img {
+    width: 350px;
+    height: 300px;
+}
+.carousel {
+    margin-bottom: 35px;
+    width: 35rem;
+}
+
+.carousel-controls a {
+    color: red;
 }
 
 /* aboutme.html */
@@ -189,9 +176,11 @@ p {
 	color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
-
+#about-me-icons {
+    margin-bottom: 25px;
+}
 
 
