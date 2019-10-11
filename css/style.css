@@ -33,15 +33,15 @@
 
 .title h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-bottom: 100px;
-    font-size: 20px;
+    margin-bottom: 25px;
+    font-size: 1.5em;
     font-weight: lighter;
     color: rgb(32, 31, 31);
 }
 
 .title h4 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: lighter;
     color: black;
 }
@@ -59,8 +59,8 @@ p, li {
     bottom: 100;
     background-color: rgb(236, 240, 184);
     border: 1px solid black;
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 30px;
+    font-size: 1em;
     padding: 10px;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
