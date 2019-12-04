@@ -1,9 +1,5 @@
 /* index.html */
 
-.container {
-    display: flex;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 .title h1  {
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
@@ -17,6 +13,7 @@
     margin: 10px 0;
     font-weight: bold;
     font-family: "Montserrat";
+    margin-bottom: 50px;
 }
 
 .title {
@@ -58,43 +55,23 @@ li {
 
 .my-work a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    position: relative;
-    bottom: 100;
-    background-color: rgb(236, 240, 184);
-    border: 1px solid black;
-    border-radius: 30px;
-    font-size: 1em;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(218, 153, 115);
+    font-size: 1.2em;
     padding: 10px;
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
+    color: rgb(218, 153, 115);;
 }
+
 .my-work a:hover {
-    color: white;
+    color: rgb(223, 97, 24);
     text-decoration: none;
     align-content: center;
     justify-content: center;
 }
 
-/* portfolio.html */
+/* aboutme.html */
 
-.grid-container {
-    display: flex;
-    height: 100vh;
-    align-content: center;
-    justify-content: center;
-}
-
-.p {
-    align-content: center;
-    text-align: center;
-    height: 100vh;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
 .p h1, .skills h1 {  
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
@@ -107,27 +84,22 @@ li {
     margin: 20px 0;
     font-weight: bold;
     font-family: "Montserrat";
-} 
+}  */
 
-.about-me {
-    grid-column: 1; 
-    background-color: black; 
-    margin: 0px;
-}
 
 
 /* portfolio projects */
 
-.projects-left {
+/* .projects-left {
     align-content: center;
     text-align: center; 
     overflow: auto;
     width: 90%;
     height: 400vh;
     margin-right: 25px;
-}
+} */
 
-.projects-left a {
+/* .projects-left a {
     color: black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     position: relative;
@@ -143,9 +115,9 @@ li {
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-}
+} */
 
-.projects-left a:hover {
+/* .projects-left a:hover {
     text-decoration: none;
     align-content: center;
     justify-content: center;
@@ -159,7 +131,7 @@ li {
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
-}
+} */
 
 /* carousel */
 
@@ -176,47 +148,74 @@ li {
 
 /* aboutme.html */
 
-.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope, .fa-file-pdf-o, .home-nav, .about-me-nav  {
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-    text-transform: uppercase;
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin: 30px;
+  }
+  
+.left {
+    left: 0;
+    background-color: #161616;
+}
+  
+.right {
+    right: 0;
+    background-color: #F8F8F8;
 }
 
-#about-me-icons {
-    margin-bottom: 25px;
-}
-.me-container {
-margin-top: 50px;
+.fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope, .fa-file-pdf-o {
+    color: rgb(216, 214, 214);
 }
 
-.me-container img {
-    width: auto;
-    height: 250px;;
-    border-radius: 50px;
-}
-
-.me-container p {
-    width: 450px;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.me-container li {
-    line-height: 35px;
+.container img {
+    height: auto;
+    width: 60%;
+    /* margin-left: 40px; */
+    margin-top: 75px;
 }
 
 /* nav bar */
 
-.home-nav, .about-me-nav  {
-    background-color: black;
-    border-radius: 20px;
-    font-size: 14px;
-    margin-left: 10px;
+.about-me-nav, .home-nav {
+    color: rgb(36, 34, 34);
+    font-size: 16px;
+    margin-left: 15px;
 }
 
+.aboutMe {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.aboutMe h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: left;
+}
+
+#about-me-icons {
+    text-align: left;
+    /* position: absolute;
+    bottom: 40px; */
+}
+
+.navTabs :hover{
+    background-color: rgb(185, 177, 177);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navTabs {
+    position: absolute;
+    right: 30px;
+}
 
 @media screen and (max-width: 600px) {
     .card-body img {
