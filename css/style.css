@@ -1,4 +1,8 @@
-/* index.html */
+/* home.html */
+
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 .title h1  {
@@ -163,6 +167,10 @@ li {
     width: 60%;
     /* margin-left: 40px; */
     margin-top: 75px;
+}
+
+.kristina {
+    width: 250px;
 }
 
 /* nav bar */
