@@ -1,0 +1,31 @@
+{% macro nav(bgColor, borderColor, navbarColor, activePage) %}
+    <header class="site-header fixed-top {{bgColor}} border-bottom {{borderColor}}">
+        <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav class="navbar main-nav navbar-expand-lg {{navbarColor}}" aria-label="Main navigation">
+                <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">Focus <i class="material-icons ml-2" aria-hidden="true">donut_large</i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="pages.html" class="nav-link{%if activePage == 'pages' %} active{% endif %}">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="components.html" class="nav-link{%if activePage == 'components' %} active{% endif %}">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="style.html" class="nav-link{%if activePage == 'style' %} active{% endif %}">Style</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="start.html" class="nav-link{%if activePage == 'start' %} active{% endif %}">Start</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+{% endmacro %}

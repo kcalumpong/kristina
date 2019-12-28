@@ -1,0 +1,110 @@
+body {
+    padding-top: calc(5rem - 1px);
+
+    @include media-breakpoint-up(lg) {
+        padding-top: calc(4rem - 1px);
+    }
+}
+
+.main-nav {
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+
+        i {
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        img {
+            max-height: 30px;
+            width: auto;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        font-size: $font-size-sm;
+
+        .nav-item + .nav-item::before {
+                content: '\2022';
+                color: gray("300");
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+
+        .nav-link {
+            border-bottom: 3px solid transparent;
+            display: inline-block;
+            letter-spacing: 2px;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            transition: border-color 0.2s linear;
+        }
+
+        .dropdown-menu {
+            font-size: $font-size-sm;
+        }
+
+        .dropdown-item {
+            letter-spacing: 1px;
+            transition: background-color 0.2s, color 0.2s linear;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .nav-item + .nav-item {
+            border-top: 1px solid;
+        }
+
+        .nav-link {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+    }
+}
+
+.navbar-dark {
+
+    .nav-item + .nav-item {
+        border-color: theme-color("dark");
+    }
+
+    .nav-link {
+
+        &:hover,
+        &.active {
+            border-color: theme-color("white");
+        }
+    }
+}
+
+.navbar-light {
+
+    .nav-item + .nav-item {
+        border-color: theme-color("light");
+    }
+
+    .nav-link {
+
+        &:hover,
+        &.active {
+            border-color: theme-color("black");
+        }
+    }
+}
+
+.side-nav {
+
+    &.sticky-top {
+        top: 5rem;
+    }
+
+    .nav-link.active {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,137 @@
+{% extends "layouts/default.njk" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', '')}}
+    <main id="content">
+
+        <!-- Hero -->
+        <div class="container py-5 py-lg-6">
+            <h1 class="display-3 pb-3">Architecture</h1>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead font-serif mb-6 text-secondary">We collaborate with clients to create buildings and environments in dialogue with culture and place.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="bg-light text-dark">
+            <div class="container-fluid py-2">
+                <div class="row no-gutters mt-n6 px-xl-4">
+
+                    <div class="col-sm-6 col-xl-4 mb-4">
+                        <a href="project-1.html">
+                            <figure class="img-scale">
+                                <div class="img-wrap mb-3">
+                                    <img src="assets/img/villa-pool.jpg" alt="White and grey concrete building near swimming pool" class="img-fluid">
+                                </div>
+                                <figcaption>
+                                    <span class="h5 font-weight-normal">Mediterranean Villa</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-4 mb-4">
+                        <a href="project-1.html">
+                            <figure class="img-scale">
+                                <div class="img-wrap mb-3">
+                                    <img src="assets/img/modern-building.jpg" alt="Windowpanes at the building" class="img-fluid">
+                                </div>
+                                <figcaption>
+                                    <span class="h5 font-weight-normal">Modern Building</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-4 mb-4">
+                        <a href="project-1.html">
+                            <figure class="img-scale">
+                                <div class="img-wrap mb-3">
+                                    <img src="assets/img/red-house.jpg" alt="..." class="img-fluid">
+                                </div>
+                                <figcaption>
+                                    <span class="h5 font-weight-normal">Wooden House</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-4 mb-4">
+                        <a href="project-1.html">
+                            <figure class="img-scale">
+                                <div class="img-wrap mb-3">
+                                    <img src="assets/img/modern-house.jpg" alt="High-rise buildings" class="img-fluid">
+                                </div>
+                                <figcaption>
+                                    <span class="h5 font-weight-normal">Modern House</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-4 mb-4">
+                        <a href="project-1.html">
+                            <figure class="img-scale">
+                                <div class="img-wrap mb-3">
+                                    <img src="assets/img/white-house.jpg" alt="White concrete house near green tree" class="img-fluid">
+                                </div>
+                                <figcaption>
+                                    <span class="h5 font-weight-normal">White House</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-4 mb-4">
+                        <a href="project-1.html">
+                            <figure class="img-scale">
+                                <div class="img-wrap mb-3">
+                                    <img src="assets/img/art-center.jpg" alt="White modern building" class="img-fluid">
+                                </div>
+                                <figcaption>
+                                    <span class="h5 font-weight-normal">Art Center</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="border-dark my-4 mx-auto text-center w-15" role="presentation">
+
+            <!-- Icon blocks -->
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-4 mb-5">
+                        <i class="material-icons icon-2x mb-3" aria-hidden="true">border_color</i>
+                        <h3 class="h4 font-weight-normal">Design</h3>
+                        <p class="mb-md-0 text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <i class="material-icons icon-2x mb-3" aria-hidden="true">format_paint</i>
+                        <h3 class="h4 font-weight-normal">Refurbishments</h3>
+                        <p class="mb-md-0 text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                    </div><div class="col-md-4 mb-5">
+                        <i class="material-icons icon-2x mb-3" aria-hidden="true">check_circle_outline</i>
+                        <h3 class="h4 font-weight-normal">Green certification</h3>
+                        <p class="mb-md-0 text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to action -->
+        <div class="bg-primary text-dark text-center">
+            <div class="container py-6">
+                <h2>We help you to design your perfect house</h2>
+                <p class="lead mb-4">Excepteur sint occaecat cupidatat non proident, sunt in est laborum.</p>
+                <a href="contact.html" class="btn btn-outline-dark">Contact Us</a>
+            </div>
+        </div>
+    </main>
+{% import 'macros/footer.njk' as footer -%}
+{{footer.footer('bg-white', 'text-dark')}}
+{% endblock %}

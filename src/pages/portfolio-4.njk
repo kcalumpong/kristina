@@ -1,0 +1,107 @@
+{% extends "layouts/default.njk" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'bg-dark', 'navbar-dark', '')}}
+    <main id="content">
+
+        <!-- Hero -->
+        <div class="container py-5 pt-lg-6">
+            <h1 class="display-3">Web Design</h1>
+            <hr class="border-2 border-light my-4 ml-0 text-left w-15" role="presentation">
+            <div class="row">
+                <div class="col-lg-9">
+                    <p class="lead text-secondary">We design strategies to appeal to your audience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="container mb-4">
+            <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
+                <div class="col-lg-5 order-lg-2 mb-2 mb-lg-0">
+                    <h2 class="h3 font-weight-normal">Architecture</h2>
+                    <p class="font-weight-light text-light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <a href="project-4.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-1.jpg" alt="..." class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Project</span>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
+                <div class="col-lg-5 mb-2 mb-lg-0">
+                    <h2 class="h3 font-weight-normal">Interior Design</h2>
+                    <p class="font-weight-light text-light"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-lg-6">
+                    <a href="project-4.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-2.jpg" alt="..." class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Project</span>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6">
+                <div class="col-lg-5 order-lg-2 mb-2 mb-lg-0">
+                    <h2 class="h3 font-weight-normal">Photography</h2>
+                    <p class="font-weight-light text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <a href="project-4.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-3.jpg" alt="..." class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Project</span>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands -->
+        <div class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-4 col-md-2 py-3">
+                        <img src="assets/img/logo-dribbble.svg" alt="Dribbble logo">
+                    </div>
+                    <div class="col-4 col-md-2 py-3">
+                        <img src="assets/img/logo-github.svg" alt="Github logo">
+                    </div>
+                    <div class="col-4 col-md-2 py-3">
+                        <img src="assets/img/logo-paypal.svg" alt="Paypal logo">
+                    </div>
+                    <div class="col-4 col-md-2 py-3">
+                        <img src="assets/img/logo-slack.svg" alt="Slack logo">
+                    </div>
+                    <div class="col-4 col-md-2 py-3">
+                        <img src="assets/img/logo-spotify.svg" alt="Spotify logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to action -->
+        <div class="bg-primary text-dark text-center">
+            <div class="container py-6">
+                <h2>I help you to design your ideal website</h2>
+                <p class="lead mb-4">Excepteur sint occaecat cupidatat non proident, sunt in est laborum.</p>
+                <a href="contact.html" class="btn btn-outline-dark">Contact</a>
+            </div>
+        </div>
+
+    </main>
+    {% import 'macros/footer.njk' as footer -%}
+    {{footer.footer('bg-white', 'text-dark')}}
+{% endblock %}

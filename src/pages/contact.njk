@@ -1,0 +1,50 @@
+{% extends "layouts/default.njk" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'home')}}
+    <main id="content">
+
+        <div class="container py-6">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-4">Contact us</h1>
+                    <hr class="border-1 border-light my-4 ml-0 text-left w-15" role="presentation">
+                    <p class="lead text-secondary">Ask us anything, or share your feedback.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-black">
+            <div class="container py-2">
+                <div class="bg-white mt-n6 px-3 px-lg-0">
+                    <div class="row justify-content-center py-4 py-lg-5">
+                        <div class="col-md-10 col-lg-8">
+                            <p>Fields marked with an <span class="text-primary">*</span> are required.</p>
+                            <form class="py-4">
+                                <div class="form-group">
+                                    <label for="inputName">Name <span class="text-primary">*</span></label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email <span class="text-primary">*</span></label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="messageTetxarea">Message <span class="text-primary">*</span></label>
+                                    <textarea class="form-control" id="messageTetxarea" rows="9" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="inputCheck">
+                                    <label class="form-check-label small" for="inputCheck">I agree with the <a href="#">terms and conditions</a> </label>
+                                </div>
+                                <button type="submit" class="btn btn-pill btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% import 'macros/footer.njk' as footer -%}
+{{footer.footer('bg-light', 'text-black')}}
+{% endblock %}

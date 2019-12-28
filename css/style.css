@@ -197,6 +197,54 @@ li {
 }
 
 
+/* PORTFOLIO GRID */
+
+.portfolio-grid {
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    grid-auto-rows: 50% 50% 50%;
+}
+
+.a {
+    background-color: green;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.a img {
+    width: 450px;
+    height: 350px;
+}
+
+.b {
+    background-color: rgb(128, 26, 0);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.c {
+    background-color: rgb(178, 196, 77);
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.d {
+    background-color: rgb(39, 23, 99);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.e {
+    background-color: rgb(212, 129, 81);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.f {
+    background-color: rgb(188, 213, 214);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+
 @media screen and (max-width: 600px) {
     .card-body img {
         width: 25rem;

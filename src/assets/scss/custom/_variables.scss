@@ -1,0 +1,185 @@
+// Custom variables
+
+// Colors
+
+$white:             #ffffff;
+$gray-100:          #f2f1f1;
+$gray-200:          #e8e7e8;
+$gray-300:          #a6a6a6;
+$gray-400:          #979a9d;
+$gray-500:          #6e6e6e;
+$gray-600:          #595959;
+$gray-700:          #404040;
+$gray-800:          #262626;
+$gray-900:          #170f18;
+$black:             #0e0e0e;
+$yellow:            #ffd300;
+$green:             #00b16a;
+$cyan:              #00acc1;
+$orange:            #f06005;
+$red:               #ee1c25;
+$pink:              #d11a6f;
+$salmon:            #ff9285;
+
+$theme-colors: (
+    "primary":      $salmon,
+    "secondary":    $gray-200,
+    "success":      $green,
+    "info":         $cyan,
+    "warning":      $orange,
+    "danger":       $red,
+    "light":        $gray-100,
+    "dark":         $gray-800,
+    "white":        $white,
+    "black":        $black,
+);
+
+// Options
+
+$enable-rounded:    false;
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+    6: ($spacer * 5),
+);
+
+// Sizes
+
+$sizes: (
+    15: 15%
+);
+
+// Links
+
+$link-color:                $white;
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 20%);
+$link-hover-decoration:     none;
+
+// Grid columns
+
+$grid-gutter-width:         2rem;
+
+// Components
+
+$border-color:              map-get($theme-colors, "dark");
+
+// Body
+
+$body-bg:                   $black;
+$body-color:                $white;
+
+// Fonts
+
+$font-family-serif: 'Playfair Display', serif;
+$font-family-sans-serif: 'Fira Sans', sans-serif;
+
+$h1-font-size:                  2.75rem;
+$h2-font-size:                  2rem;
+$h3-font-size:                  1.75rem;
+$h4-font-size:                  1.5rem;
+$h5-font-size:                  1.25rem;
+$h6-font-size:                  1rem;
+
+$headings-font-family:          $font-family-serif;
+$headings-font-weight:          700;
+$headings-margin-bottom:        .75rem;
+
+$display1-weight:               600;
+$display2-weight:               600;
+$display3-weight:               600;
+$display4-weight:               600;
+$display-line-height:           1.15;
+
+$text-muted:                    $gray-500;
+
+// Tables
+$table-border-color:            $gray-700;
+
+// Buttons
+
+$btn-padding-y:                 .75rem;
+$btn-padding-x:                 1.5rem;
+$btn-font-size:                 .9rem;
+$btn-padding-y-sm:              .5rem;
+$btn-padding-x-sm:              1rem;
+$btn-padding-y-lg:              1rem;
+$btn-padding-x-lg:              2rem;
+$btn-font-size-lg:              1.15rem;
+$btn-border-width:              2px;
+
+// Forms
+
+$input-padding-y:               0.75rem;
+$input-padding-x:               1rem;
+$input-padding-y-sm:            0.5rem;
+$input-padding-x-sm:            0.75rem;
+$input-padding-y-lg:            1rem;
+$input-padding-x-lg:            1.25rem;
+$input-box-shadow:              none;
+$input-height:                  auto;
+$input-placeholder-color:       $gray-500;
+$form-group-margin-bottom:      1.5rem;
+
+// Dropdowns
+
+$dropdown-spacer:                   0;
+$dropdown-link-hover-color:         $white;
+$dropdown-link-hover-bg:            $black;
+$dropdown-link-active-bg:           $black;
+$dropdown-item-padding-y:           .5rem;
+
+// Navs
+
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-bg:           inherit;
+
+// Navbar
+
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  0;
+$navbar-toggler-padding-y:          .5rem;
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $white;
+$navbar-light-color:                map-get($theme-colors, "dark");
+$navbar-light-hover-color:          map-get($theme-colors, "dark");
+$navbar-dark-toggler-border-color:  transparent;
+$navbar-light-toggler-border-color: transparent;
+$navbar-nav-link-padding-x:         0;
+
+// Pagination
+
+$pagination-padding-y:              .75rem;
+$pagination-padding-x:              1rem;
+$pagination-padding-y-sm:           .25rem;
+$pagination-padding-x-sm:           .65rem;
+$pagination-padding-y-lg:           .9rem;
+$pagination-padding-x-lg:           1.5rem;
+$pagination-line-height:            1;
+$pagination-color:                  $gray-800;
+$pagination-hover-color:            $black;
+$pagination-hover-bg:               map-get($theme-colors, "primary");;
+$pagination-active-color:           $white;
+$pagination-active-bg:              $black;
+$pagination-active-border-color:    $gray-300;
+
+// Cards
+
+$card-columns-count:                2 !default;
+$card-columns-gap:                  2rem !default;
+
+// Carousel
+
+$carousel-control-opacity:          .7;
+$carousel-control-color:            $white !important;
+$carousel-indicator-width:          1.5rem;
+$carousel-indicator-height:         0.3rem;
+$carousel-indicator-spacer:         0.3rem;
+
+// Image thumbnails
+
+$thumbnail-padding:                 .75rem;
+$thumbnail-bg:                      transparent;
+$thumbnail-border-color:            $border-color;

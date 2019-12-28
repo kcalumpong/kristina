@@ -1,0 +1,51 @@
+{% extends "layouts/default.njk" %}
+{% block content %}
+{% import 'macros/header.njk' as header %}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', '')}}
+    <main id="content">
+
+        <div class="container py-5">
+
+            <!-- Hero -->
+            <h1 class="display-4 mb-3">Autumn</h1>
+            <hr class="border-1 border-white mb-5 ml-0 text-left w-15" role="presentation">
+
+            <figure>
+                <img src="assets/img/autumn-landscape.jpg" class="img-fluid mb-2" alt="Yellow and green leafed trees">
+            </figure>
+
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-9 text-center">
+                    <h2 class="mb-3">Fall in love with autumn</h2>
+                    <p class="text-secondary">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="row mx-n1">
+                <div class="col-6 col-lg-3 px-1 mb-2">
+                    <img src="assets/img/maple-leaf.jpg" class="img-fluid" alt="Maple leaf" data-action="zoom">
+                </div>
+                <div class="col-6 col-lg-3 px-1 mb-2">
+                    <img src="assets/img/wooden-bench.jpg" class="img-fluid" alt="Brown wooden bench beside tree" data-action="zoom">
+                </div>
+                <div class="col-6 col-lg-3 px-1 mb-2">
+                    <img src="assets/img/squirrel.jpg" class="img-fluid" alt="Squirrel on ground" data-action="zoom">
+                </div>
+                <div class="col-6 col-lg-3 px-1 mb-2">
+                    <img src="assets/img/red-tree.jpg" class="img-fluid" alt="Red leafed tree" data-action="zoom">
+                </div>
+            </div>
+
+            <div class="text-center my-6">
+                <a href="portfolio-3.html" class="btn btn-outline-white">View Portfolio</a>
+            </div>
+        </div>
+
+    </main>
+    {% import 'macros/footer.njk' as footer -%}
+    {{footer.footer('bg-white', 'text-dark')}}
+{% endblock %}

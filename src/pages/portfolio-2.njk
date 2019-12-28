@@ -1,0 +1,96 @@
+{% extends "layouts/default.njk" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-white', 'border-light', 'navbar-light', '')}}
+    <main id="content">
+
+        <!-- Hero -->
+        <div class="bg-light text-black">
+            <div class="container py-5 py-lg-6 text-center">
+                <h1 class="display-3 pb-3">Interior Design</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <p class="lead text-dark mb-0">Create a beautiful, carefully curated online portfolio to showcase your work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="bg-white text-dark">
+            <div class="container py-5">
+                <div class="row grid" data-colcade="columns: .col-md-6, items: .grid-item">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6"></div>
+
+                    <a href="project-2.html" class="grid-item">
+                        <figure class="img-rising mb-4">
+                            <img src="assets/img/club-workspace.jpg" alt="Black floor lamp on living room sofa" class="img-fluid mb-2">
+                            <figcaption class="h5 font-weight-normal">Club Workspace<br><span class="small text-muted">Scandinavian</span></figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="project-2.html" class="grid-item">
+                        <figure class="img-rising mb-4">
+                            <img src="assets/img/white-corner.jpg" alt="White steel chair in front round table" class="img-fluid mb-2">
+                            <figcaption class="h5 font-weight-normal">White Corner<br><span class="small text-muted">Minimalist</span></figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="project-2.html" class="grid-item">
+                        <figure class="img-rising mb-4">
+                            <img src="assets/img/sofa-cat.jpg" alt="Brown and white wooden table beside sofa" class="img-fluid mb-2">
+                            <figcaption class="h5 font-weight-normal">Living Room<br><span class="small text-muted">Modern</span></figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="project-2.html" class="grid-item">
+                        <figure class="img-rising mb-4">
+                            <img src="assets/img/modern-kitchen.jpg" alt="Gray steel 3-door refrigerator near modular kitchen" class="img-fluid mb-2">
+                            <figcaption class="h5 font-weight-normal">Modular Kitchen<br><span class="small text-muted">Modern</span></figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="project-2.html" class="grid-item">
+                        <figure class="img-rising mb-4">
+                            <img src="assets/img/mens-closet.jpg" alt="Spacious mens closet with two beige chairs" class="img-fluid mb-2">
+                            <figcaption class="h5 font-weight-normal">Mens Closet<br><span class="small text-muted">Modern</span></figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="project-2.html" class="grid-item">
+                        <figure class="img-rising mb-4">
+                            <img src="assets/img/modern-room.jpg" alt="Room with black table lamp on nightstand" class="img-fluid mb-2">
+                            <figcaption class="h5 font-weight-normal">Clean room<br><span class="small text-muted">Modern</span></figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="bg-primary text-dark text-center">
+            <div class="container py-6">
+                <h2>Newsletter subscription</h2>
+                <p class="mb-4">Subscribe to our newsletter to receive news & updates.</p>
+                <form>
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="col-md-4">
+                            <label class="sr-only" for="inputName">First name</label>
+                            <input type="text" class="form-control border-0 font-italic mb-3" id="inputName" placeholder="First Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="sr-only" for="inputEmail">Email address</label>
+                            <input type="email" class="form-control border-0 font-italic mb-3" id="inputEmail" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-dark mb-3">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    {% import 'macros/footer.njk' as footer -%}
+    {{footer.footer('bg-white', 'text-dark')}}
+{% endblock %}

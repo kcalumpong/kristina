@@ -1,0 +1,63 @@
+{% extends "layouts/default.njk" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'home')}}
+    <main id="content">
+
+        <div class="container py-6">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-4">About us</h1>
+                    <hr class="border-1 border-light my-4 ml-0 text-left w-15" role="presentation">
+                    <p class="lead text-secondary">We love to learn, collaborate and create.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-black">
+            <div class="container py-2">
+                <div class="bg-white mt-n6 px-3 px-lg-0">
+                    <div class="row justify-content-center py-4 py-lg-5">
+                        <div class="col-md-10 col-lg-8">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <img src="assets/img/meeting.jpg" class="img-fluid mt-3 mb-2" alt="Two man and woman sitting on chair in front of glass widowpane">
+
+                            <h2 class="mt-4">Our story</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <a href="mailto:hello@example.com">hello@example.com.</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="bg-primary text-dark text-center">
+            <div class="container py-6">
+                <h2>Newsletter subscription</h2>
+                <p class="mb-4">Subscribe to our newsletter to receive news & updates.</p>
+                <form>
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="col-md-4">
+                            <label class="sr-only" for="inputName">First name</label>
+                            <input type="text" class="form-control border-0 font-italic mb-3" id="inputName" placeholder="First Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="sr-only" for="inputEmail">Email address</label>
+                            <input type="email" class="form-control border-0 font-italic mb-3" id="inputEmail" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-dark mb-3">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% import 'macros/footer.njk' as footer -%}
+{{footer.footer('bg-light', 'text-black')}}
+{% endblock %}

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <title>Focus Theme</title>
+    <!-- Prism -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarDocs">
+
+    <header class="site-header fixed-top bg-white border-bottom border-light">
+        <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav class="navbar main-nav navbar-expand-lg navbar-light" aria-label="Main navigation">
+                <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">Focus <i class="material-icons ml-2" aria-hidden="true">donut_large</i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="pages.html" class="nav-link">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="components.html" class="nav-link">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="style.html" class="nav-link">Style</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="start.html" class="nav-link active">Start</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <div class="bg-light text-black">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9">
+                        <h1 class="display-4 mb-4">Getting Started</h1>
+                        <p class="lead">A brief guide to get started with Focus theme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 pl-lg-5 order-lg-2 pt-lg-6">
+                        <nav id="nav-start" class="navbar side-nav d-none d-lg-block navbar-expand-lg navbar-light sticky-top" aria-label="Components navigation">
+                            <a class="collapsed btn-block d-lg-none btn btn-outline-dark mb-3 p-3 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Toggle navigation">
+                                <span class="text-uppercase">Navigation</span>
+                            </a>
+
+                            <div class="collapse navbar-collapse" id="navbarDocs">
+                                <ul class="navbar-nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#files-structure">Files structure</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#dev-setup">Development setup</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#basic-template">Basic template</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#changelog">Changelog</a>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <a class="nav-link" href="#">Go top &uarr;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-9 order-lg-1">
+
+                        <h2 class="pt-5 pt-lg-6" id="files-structure">Files structure</h2>
+                        <p>Unzip the theme folder and you'll see the next file structure:</p>
+                        <ul class="mb-4">
+                            <li><code>dist</code> - production files</li>
+                            <li><code>src</code>
+                                <ul>
+                                    <li><code>assets</code></li>
+                                    <li><code>pages</code></li>
+                                    <li><code>scss</code></li>
+                                    <li><code>templates</code></li>
+                                </ul>
+                            </li>
+                            <li><code>gulpfile.js</code></li>
+                            <li><code>package.json</code></li>
+                            <li><code>README.md</code></li>
+                        </ul>
+
+                        <h2 class="pt-5 pt-lg-6" id="dev-setup">Development setup</h2>
+
+                        <p>Theme's dev tools require Node and Gulp CLI. To install Node go to <a href="https://nodejs.org/en/" target="_blank">Node.js </a> and follow the instructions. To install <a href="https://gulpjs.com/" target="_blank">Gulp CLI</a> run the following command:</p>
+                        <pre class="mb-4"><code class="language-bash py-2">npm i gulp-cli -g</code></pre>
+                        <p>Then run the following npm command to install all the theme's dependencies:</p>
+                        <pre class="mb-4"><code class="language-bash py-2">npm i</code></pre>
+                        <p>Focus uses <a href="https://www.browsersync.io/" target="_blank">Browsersync</a> to serve pages from the dist directory. Running <strong>gulp</strong> will compile the theme, copy all required files to the dist directory and will open a browser window to <code>dist/index.html</code>.</p>
+                        <pre class="mb-4"><code class="language-bash py-2">gulp</code></pre>
+
+                        <p>Other gulp tasks available:</p>
+                        <ul class="mb-4">
+                            <li class="mb-2">
+                                <code>gulp css</code>: Compiles and minifies <code>scss</code> files to <code>dist</code>.
+                            </li>
+                            <li class="mb-2">
+                                <code>gulp watch</code>: Starts a local server and watch for changes.
+                            </li>
+                        </ul>
+                        <p>The theme uses <a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a> as a template engine, basically to include partials (header, footer...). Gulp renders Nunjucks templates to HTML.</p>
+                        <div class="alert alert-info">
+                            If you prefer, you can simply use the static files that are in the <strong>dist</strong> folder and bypass the gulp workflow.
+                        </div>
+
+                        <h2 class="pt-5 pt-lg-6" id="basic-template">Basic template</h2>
+                        <p>The basic template is a guideline for how to structure your pages when building with this theme.</p>
+                        <pre>
+                            <code class="lang-html py-3">
+                                &lt;!doctype html&gt;
+                                    &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                        &lt;meta charset="utf-8"&gt;
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1,
+                                        shrink-to-fit=no"&gt;
+
+                                        &lt;!-- Google Fonts --&gt;
+                                        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?
+                                        family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600"&gt;
+
+                                        &lt;!-- Material icons --&gt;
+                                        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?
+                                        family=Material+Icons"&gt;
+
+                                        &lt;!-- CSS (including Bootstrap) --&gt;
+                                        &lt;link rel="stylesheet" href="assets/css/theme.min.css"&gt;
+
+                                        &lt;title&gt;Bootstrap Theme&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+                                        &lt;!-- JS (including Bootstrap & plugins) --&gt;
+                                        &lt;script src="assets/js/theme.min.js"&gt;&lt;/script&gt;
+                                    &lt;/body&gt;
+                                &lt;/html&gt;
+                            </code>
+                        </pre>
+
+                        <h2 class="pt-5 pt-lg-6" id="changelog">Changelog</h2>
+                        <h3 class="h5 mb-4"><code>1.2.0</code> - 10 June 2019</h3>
+                        <span class="badge badge-light mb-2 p-2">Updated</span>
+                        <ul>
+                            <li>jQuery to <code>3.4.1</code></li>
+                        </ul>
+
+                        <span class="badge badge-light mb-2 p-2">Changed</span>
+                        <ul>
+                            <li>Primary color: <code>_variables.scss</code></li>
+                            <li>Replaced Masonry by Colcade</li>
+                            <li>Reorganized files structure</li>
+                        </ul>
+
+                        <h3 class="h5 mb-4"><code>1.1.0</code> - 10 April 2019</h3>
+                        <span class="badge badge-light mb-2 p-2">Updated</span>
+                        <ul>
+                            <li>Bootstrap to <code>4.3.1</code></li>
+                            <li><code>popper.js</code> to <code>1.15.0</code></li>
+                            <li>Gulp to <code>4.0.0</code></li>
+                        </ul>
+
+                        <h3 class="h5 mb-5"><code>1.0.0</code> - Initial release</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/theme.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+</body>
+</html>

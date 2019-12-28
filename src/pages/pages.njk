@@ -1,0 +1,175 @@
+{% extends "layouts/default.njk" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'home')}}
+    <main id="content">
+
+        <!-- Hero -->
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-9">
+                    <h1 class="display-4 mb-4">Pages</h1>
+                    <p class="lead text-secondary">A set of pages made to start your portfolio quickly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="container pb-4">
+            <h2 class="h3 mb-4 pb-3 text-center">Landing</h2>
+            <ul class="row list-unstyled">
+                <li class="col-md-6 mb-4">
+                    <a href="portfolio-1.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-1.jpg" alt="Architecture portfolio" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="portfolio-2.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-2.jpg" alt="Interior design portfolio" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="portfolio-3.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-3.jpg" alt="Photography portfolio" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="portfolio-4.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/portfolio-4.jpg" alt="Web design portfolio" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="h3 mb-4 pb-3 text-center">Project</h2>
+            <ul class="row list-unstyled">
+                <li class="col-md-6 mb-4">
+                    <a href="project-1.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/project-1.jpg" alt="Architecture project" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="project-2.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/project-2.jpg" alt="Interior design project" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="project-3.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/project-3.jpg" alt="Photography project" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="project-4.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/project-4.jpg" alt="Web design project" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="h3 mb-4 pb-3 text-center">Blog</h2>
+            <ul class="row list-unstyled">
+                <li class="col-md-6 mb-4">
+                    <a href="blog.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/blog.jpg" alt="Blog" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="article.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/article.jpg" alt="Article" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="h3 mb-4 pb-3 text-center">Contact & About</h2>
+            <ul class="row list-unstyled">
+                <li class="col-md-6 mb-4">
+                    <a href="contact.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/contact.png" alt="Interior designer" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="col-md-6 mb-4">
+                    <a href="about.html">
+                        <figure class="img-overlay">
+                            <img src="assets/img/about.jpg" alt="" class="border-dark img-thumbnail">
+                            <div class="img-hover">
+                                <span class="img-text">View Page</span>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Call to action -->
+        <div class="bg-primary text-dark text-center">
+            <div class="container py-6">
+                <h2 class="font-sans-serif">Focus is mobile-ready, flexible and cross-browser</h2>
+                <p class="lead mb-4">Impress your audiences with memorable pages that showcase your works</p>
+                <a href="https://themes.getbootstrap.com/product/focus/" class="btn btn-outline-dark">Buy now</a>
+            </div>
+        </div>
+    </main>
+    {% import 'macros/footer.njk' as footer -%}
+    {{footer.footer('bg-white', 'text-dark')}}
+{% endblock %}

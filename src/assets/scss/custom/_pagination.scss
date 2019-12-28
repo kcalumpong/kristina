@@ -1,0 +1,11 @@
+.pagination {
+
+    .page-item {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+
+    .page-link {
+        transition: background-color 0.25s ease-in-out;
+    }
+}
