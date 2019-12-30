@@ -1,9 +1,5 @@
 /* home.html */
 
-* {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 .title h1  {
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
@@ -46,24 +42,14 @@
     color: black;
 }
 
-p, li {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 16px;
-    font-weight: lighter;
-    color: black;
-}
-
-li {
-    background-color: rgb(241, 241, 241);
-}
-
 .my-work a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(218, 153, 115);
+    /* border: 1px solid rgb(218, 153, 115); */
+    border: 1px solid rgb(20, 20, 20);
     font-size: 1.2em;
     padding: 10px;
-    color: rgb(218, 153, 115);;
+    color: rgb(20, 20, 20);;
 }
 
 .my-work a:hover {
@@ -75,39 +61,25 @@ li {
 .home-nav, .about-me-nav {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: rgb(255, 255, 255);
-    /* border: 1px solid rgb(218, 153, 115); */
     font-size: 1.2em;
-    /* padding: 10px; */
-    /* color: rgb(218, 153, 115); */
 }
 
 .home-nav a:hover, .about-me nav {
-    /* color: rgb(223, 97, 24); */
     text-decoration: none;
     align-content: center;
     justify-content: center;
 }
 
-.mainContainer {
-    height: 100%;
-    background-color: #F8F8F8;
-    width: 100%;
+li {
+    list-style-type: none;
 }
 
-.centered {
-    margin-top: 50px;
-    top: 50%;
-    left: 50%;
-    
-    text-align: center;
-  }
 
   .techSkills {
     font-family: "Montserrat";
-  }
+}
 
 /* Portfolio */
-
 
 .portfolioTitle {
     font-family: "Montserrat";
@@ -127,50 +99,21 @@ li {
     font-size: 14px;
 }
 
-/* .buttons  */
-
-.buttons a {
-  text-decoration: none;
-}
-
-
-
 /* aboutme.html */
 
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    margin: 30px;
-  }
-  
-.left {
-    left: 0;
-    background-color: #161616;
-}
-  
-.right {
-    right: 0;
-    background-color: #F8F8F8;
-}
-
 .fa-linkedin, .fa-github, .fa-circle-thin, .fa-envelope, .fa-file-pdf-o {
-    color: rgb(216, 214, 214);
+    color: rgb(117, 115, 115);
 }
 
 .container1 img {
     height: auto;
     width: 60%;
-    /* margin-left: 40px; */
     margin-top: 75px;
 }
 
 .kristina {
-    width: 250px;
+    width: 350px;
+    margin-bottom: 45px;
 }
 
 /* nav bar */
@@ -190,7 +133,6 @@ li {
 .aboutMe h1 {
     font-size: 30px;
     font-weight: bold;
-    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
     text-align: left;
 }
 
@@ -203,81 +145,3 @@ li {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
-
-/* PORTFOLIO GRID */
-
-.portfolio-grid {
-    display: grid;
-    grid-auto-columns: 50% 50%;
-    grid-auto-rows: 50% 50% 50%;
-}
-
-.a {
-    background-color: green;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.a img {
-    width: 450px;
-    height: 350px;
-}
-
-.b {
-    background-color: rgb(128, 26, 0);
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.c {
-    background-color: rgb(178, 196, 77);
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-.d {
-    background-color: rgb(39, 23, 99);
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-.e {
-    background-color: rgb(212, 129, 81);
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-.f {
-    background-color: rgb(188, 213, 214);
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-}
-
-
-@media screen and (max-width: 600px) {
-    .card-body img {
-        width: 25rem;
-        height: auto;
-    }
-    .carousel {
-        margin-bottom: 30px;
-        width: 25rem;
-        align-content: center;
-        justify-content: center;
-    }
-  }
-
-@media screen and (max-width: 413px) {
-    .card-body img {
-        width: 24rem;
-        height: auto;
-        align-content: center;
-        justify-content: center;
-    }
-    .carousel {
-        margin-bottom: 30px;
-        width: 24rem;
-        align-content: center;
-        justify-content: center;
-    }
-  }
-
