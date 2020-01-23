@@ -1,1 +1,3 @@
-https://kcalumpong.github.io/kristina/
+My personal portfolio :nerd_face
+
+kristinacalumpong.dev
