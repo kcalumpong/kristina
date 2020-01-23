@@ -1,3 +1,2 @@
-My personal portfolio :nerd_face:
+[Kristina's Portfolio](kristinacalumpong.dev) :nerd_face:
 
-kristinacalumpong.dev
