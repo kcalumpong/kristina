@@ -1,2 +1,2 @@
-[Kristina's Portfolio](kristinacalumpong.dev) :nerd_face:
+[Kristina's Portfolio](https://www.kristinacalumpong.dev) :nerd_face:
 
